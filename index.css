@@ -1,0 +1,189 @@
+/* Overall css */
+* { 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    margin: 0%;
+}
+
+
+/*Header css*/
+.navbar {
+    background-color: #1F2937;
+}
+.navdiv {
+    padding: 1em;
+    /* making the header a flexbox */
+    display: flex;
+    /* allow the navbar to wrap when needed*/
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{ 
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+.logo {
+    margin-left: 8%;
+}
+.navlist, ul {
+    margin-right: 10%;
+    display: flex;
+    gap: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+}
+li { 
+    list-style: none;
+}
+.logo a, li a {
+    color: #F9FAF8;
+    padding: 0.5em;
+}
+
+/* Main section css */
+.main-section {
+    background-color: #1F2937;
+    display: flex;
+    flex-flow:row nowrap;
+    gap: 2%;
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+.main-text {
+    display: flex;
+    gap: 1%;
+    flex-direction: column ;
+    max-width: 400px;
+    margin-left: 5%;
+    margin-right: 5% ;
+    margin-bottom: 20px;
+    margin-top: 3%;
+}
+.main-title {
+    font-size: 52px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+.main-subtext {
+    font-size: 18px;
+    color: #F9FAF8;
+}
+.main-button {
+    /* fill half the available space in the flexbox */
+    width: 50%;
+    flex:0;
+}
+.main-section button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    border: #3882F6;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    padding-bottom: 0.4em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.main-section button:hover {
+    /* button changes background color as long as the cursor hovers over it  */
+    background-color: #1265ec;
+}
+.main-image { 
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 4%;
+} 
+.main-section img { 
+    /* make image responsive for all screen sizes */
+    max-width: 100%;
+    max-height: 100%;
+    /* fixed width amount to not grow too much; such that it still remains on the same row and is able to wrap when needed */
+    width:500px;
+    height:auto;
+    border-radius: 8%;
+    /* small transition to make website feel interactive */
+    transition: transform 0.4s ease-in-out;
+}
+.main-section img:hover {
+    /* image becomes 1.05 times of current size for as long as cursor hovers over it */
+    transform:scale(1.05); 
+}
+
+/* Best seller css */
+.best-seller-info h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 36px;
+    font-weight: 900;
+    text-align: center;
+    color: #1F2937;
+}
+.best-seller-list{
+    display: flex;
+    flex-flow: row wrap;
+}
+.best-seller-list, ul {
+    margin-right: auto;
+    padding: 3%;
+}
+.best-seller-info .image {
+    width: 300px; 
+    height: 300px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    border-radius:80px;
+    background-size: cover;
+    transition: background-image 0.4s ease-in-out;
+}
+
+/* transition to show another related image to the current image as long as the cursor hovers over the image*/
+.img1 {
+    background-image: url(images/bag-01-2.jpg);
+}
+.img1:hover {
+    background-image: url(images/bag-01.jpg);
+}
+.img2 {
+    background-image: url(images/hoodie-03.jpg);
+}
+.img2:hover {
+    background-image: url(images/hoodie-03-back.jpg);
+}
+.img3 {
+    background-image: url(images/faith-tshirt-01.jpg);
+}
+.img3:hover {
+    background-image: url(images/faith-tshirt-01-back.jpg);
+}
+.best-seller-text {
+    text-align: center;
+    padding: 3%;
+    margin:auto;
+    color: #1F2937;
+    font-size: 16px;
+}
+
+/* Quote css */
+.quote-box {
+    background-color: #E5E7EB;
+    color:#1F2937;
+    padding: 10vh;
+    text-align: center;
+}
+
+/* Footer css */
+.footer{
+    background-color: #1F2937;   
+    color: #F9FAF8;
+    text-align: center;
+    padding: 10px;
+}
