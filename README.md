@@ -1,2 +1,2 @@
 # landing-site
-a basic template for a landing/home page
+a landing/home page for ecommerce site
